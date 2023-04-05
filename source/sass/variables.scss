@@ -1,0 +1,23 @@
+// Colors
+$black: #000000;
+$white: #ffffff;
+$background-color: #ecf7f3;
+$text-nav: #4a4a4a;
+$title-promo: #2d2d2d;
+$description-promo: #7c7c7c;
+$fragment-promo: #ff8345;
+$text-info: #707070;
+$text-form: #a2a2a2;
+$green: #48b774;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1400px;
+$mobile-width-only: 320px;
+
+@mixin button {
+  font-weight: 500;
+  color: $white;
+  background-color: $green;
+}

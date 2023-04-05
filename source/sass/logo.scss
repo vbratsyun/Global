@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+}
+
+.logo__image {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
