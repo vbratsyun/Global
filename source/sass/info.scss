@@ -1,0 +1,29 @@
+.info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.info__text,
+.info__link-price {
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  line-height: 19px;
+  color: $text-info;
+}
+
+.info__link-price {
+  padding-left: 3px;
+  font-weight: 500;
+  color: #fd905a;
+}

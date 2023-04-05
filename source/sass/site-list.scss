@@ -1,0 +1,40 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 45px;
+    margin: 0 241px 0 265px;
+    padding: 0;
+  }
+}
+
+.site-list__item {
+  background-color: $text-form;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.site-list__item-link {
+  display: block;
+  padding: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  border-bottom: 2px solid $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    color: $text-nav;
+    text-transform: none;
+    border-bottom: none;
+  }
+}

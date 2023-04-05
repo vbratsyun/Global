@@ -1,0 +1,11 @@
+.carousel {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -86px;
+    right: -207px;
+  }
+}
+
+.carousel__image {
+  margin: 0 auto;
+}

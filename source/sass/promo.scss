@@ -1,0 +1,74 @@
+.promo {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.promo__title {
+  margin-bottom: 22px;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 65px;
+  color: $title-promo;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+
+.promo__title-fragment {
+  color: $fragment-promo;
+}
+
+.promo__description {
+  margin-bottom: 30px;
+  min-height: 78px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: $description-promo;
+
+  @media (min-width: $tablet-width) {
+    width: 68.6%;
+    min-height: min-content;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 444px;
+    text-align: left;
+    margin: 0 0 30px;
+  }
+}
+
+.promo__link {
+  @include button;
+
+  display: block;
+  width: max-content;
+  margin-bottom: 50px;
+  padding: 12px 20px;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 50px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin: 0 0 50px;
+  }
+}

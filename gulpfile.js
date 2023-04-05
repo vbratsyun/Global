@@ -40,7 +40,7 @@ export const html = () => {
 /// Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/*.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -91,7 +91,8 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
-    'source/*.webmanifest'
+    'source/*.webmanifest',
+    'source/pristine/*.{js,css}'
   ], {
     base: 'source'
   })
@@ -130,8 +131,8 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  // gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  // gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -142,9 +143,9 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-    // styles,
+    styles,
     html,
-    // scripts,
+    scripts,
     svg,
     // sprite,
     // createWebp
@@ -159,9 +160,9 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    // styles,
+    styles,
     html,
-    // scripts,
+    scripts,
     svg,
     // sprite,
     // createWebp

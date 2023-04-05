@@ -1,0 +1,134 @@
+.page-nav__wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
+}
+
+.page-nav__login {
+  display: block;
+  padding: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $text-form;
+
+  @media (min-width: $tablet-width) {
+    @include button;
+
+    padding: 9px 23px;
+    text-transform: none;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+}
+
+.page-nav__toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 43px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 2;
+  outline: 4px solid transparent;
+
+  // &:hover {
+  //   opacity: 0.6;
+  // }
+
+  // &:focus {
+  //   outline-color: $focus;
+  //   padding: 0;
+  // }
+
+  // &:active {
+  //   opacity: 0.3;
+  // }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-nav--closed .page-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 23px;
+  height: 4px;
+  background-color: $fragment-promo;
+  box-shadow: 0 9px 0 0 $fragment-promo, 0 19px 0 0 $fragment-promo;
+}
+
+.page-nav--opened .page-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    width: 28px;
+    height: 4px;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.page-nav--opened .page-nav__wrapper {
+  display: block;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    position: relative;
+  }
+}
+
+.page-nav--nojs .page-nav__toggle {
+  display: none;
+}
+
+.page-nav--nojs .page-nav__wrapper {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: relative;
+  }
+}
