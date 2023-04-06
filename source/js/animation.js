@@ -6,4 +6,4 @@ setTimeout((elems)=>{
       elem.classList.add(`icon-transition${index+1}-1`);
     }
   });
-}, 3000);
+}, 2400);

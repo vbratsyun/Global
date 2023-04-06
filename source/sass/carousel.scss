@@ -142,27 +142,27 @@
 
 .icon-transition1-1 {
   transform: rotate(-195deg) translate(228px, -1px) rotate(195deg);
-  animation: icon-transition1-1 10s linear 1.2s 3 forwards;
+  animation: icon-transition1-1 10s linear infinite;
 }
 
 .icon-transition2-1 {
   transform: rotate(-155deg) translate(217px, 2px) rotate(155deg);
-  animation: icon-transition2-1 10s linear 1.2s 3 forwards;
+  animation: icon-transition2-1 10s linear infinite;
 }
 
 .icon-transition3-1 {
   transform: rotate(-90deg) translate(212px, 20px) rotate(90deg);
-  animation: icon-transition3-1 10s linear 1.2s 3 forwards;
+  animation: icon-transition3-1 10s linear infinite;
 }
 
 .icon-transition4-1 {
   transform: rotate(336deg) translate(214px, -3px) rotate(-336deg);
-  animation: icon-transition4-1 10s linear 1.2s 3 forwards;
+  animation: icon-transition4-1 10s linear infinite;
 }
 
 .icon-transition5-1 {
   transform: rotate(15deg) translate(227px, 1px) rotate(-15deg);
-  animation: icon-transition5-1 10s linear 1.2s 3 forwards;
+  animation: icon-transition5-1 10s linear infinite;
 }
 
 @keyframes icon-transition1-1 {
