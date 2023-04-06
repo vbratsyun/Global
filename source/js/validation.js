@@ -1,8 +1,8 @@
 const form = document.querySelector('.form');
 
 const pristine = new Pristine(form, {
-  classTo: 'form',
-  errorTextParent: 'form__error',
+  classTo: 'form__search',
+  errorTextParent: 'form__search',
 });
 
 const addValidator = (message, validate) => {
@@ -10,6 +10,17 @@ const addValidator = (message, validate) => {
 };
 
 addValidator(
-  'Количество вводимых символов должно быть больше 2',
-  (search) => search.length > 2
+  'The number of characters entered must be more than 4',
+  (search) => search.length > 4
+);
+
+
+addValidator(
+  'The number of characters entered must be less than 12',
+  (search) => search.length < 12
+);
+
+addValidator(
+  'The following characters are not allowed !@#$%^&*()',
+  (search) => !/[!@#$%^&*()]+/.test(search)
 );

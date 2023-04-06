@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global</title>
+  <link rel="stylesheet" href="./pristine/pristine.css">
   <script src="./pristine/pristine.min.js" defer></script>
   <script src="./js/main.js" type="module"></script>
   <link href="css/style.min.css" rel="stylesheet" />
@@ -19,17 +20,17 @@
     <nav class="page-nav page-nav--closed page-nav--nojs">
       <div class="page-nav__wrapper">
         <ul class="page-nav__site-list site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#"> Mobile Top Up</a>
+          <li>
+            <a class="site-list__link" href="#"> Mobile Top Up</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#">About</a>
+          <li>
+            <a class="site-list__link" href="#">About</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#">Rate</a>
+          <li>
+            <a class="site-list__link" href="#">Rate</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="">Help</a>
+          <li>
+            <a class="site-list__link" href="">Help</a>
           </li>
         </ul>
         <a class="page-nav__login" href="#">Sign Up</a>
@@ -52,12 +53,11 @@
         <a class="promo__link" href="#">Get Started</a>
         <form class="form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
           <label class="visually-hidden" for="search">Search label</label>
-          <input class="form__input" id="search" name="search-input" type="text" minlength="4" maxlength="12" placeholder="Where do you want to call?" data-pristine-my-range="10,30">
+          <div class="form__search">
+            <input class="form__input" id="search" name="search-input" type="text" placeholder="Where do you want to call?" required>
+            <button class="form__button" type="submit">Найти</button>
+          </div>
 
-          <svg class=" form__search-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-            <path d="M12.4267 20.9866C17.1518 20.9866 20.9822 17.1561 20.9822 12.431C20.9822 7.70594 17.1518 3.87549 12.4267 3.87549C7.70155 3.87549 3.87109 7.70594 3.87109 12.431C3.87109 17.1561 7.70155 20.9866 12.4267 20.9866Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M23.1208 23.1252L18.4688 18.4731" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
 
         </form>
       </section>

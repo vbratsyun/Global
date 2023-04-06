@@ -21,3 +21,25 @@ $mobile-width-only: 320px;
   color: $white;
   background-color: $green;
 }
+
+@mixin state {
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $fragment-promo;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      background-color: $green;
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-color: $fragment-promo;
+      opacity: 1;
+    }
+  }
+}

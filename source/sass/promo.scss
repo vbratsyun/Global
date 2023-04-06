@@ -53,6 +53,7 @@
 
 .promo__link {
   @include button;
+  @include state;
 
   display: block;
   width: max-content;
