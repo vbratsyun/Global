@@ -14,15 +14,7 @@
   }
 }
 
-.site-list__item {
-  background-color: $text-form;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-  }
-}
-
-.site-list__item-link {
+.site-list__link {
   display: block;
   padding: 20px;
   font-weight: 400;
@@ -30,11 +22,48 @@
   color: $white;
   text-transform: uppercase;
   border-bottom: 2px solid $white;
+  background-color: #a2a2a2;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $fragment-promo;
+  }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 0;
     color: $text-nav;
     text-transform: none;
     border-bottom: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      margin: auto;
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $green;
+      background-color: transparent;
+
+      &::before {
+        background-color: $green;
+      }
+    }
+
+    &:active {
+      color: $fragment-promo;
+
+      &::before {
+        background-color: $fragment-promo;
+      }
+    }
   }
 }

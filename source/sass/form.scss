@@ -1,8 +1,11 @@
 .form {
+  margin-bottom: 40px;
+}
+
+.form__search {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 40px;
 }
 
 .form__input {
@@ -27,10 +30,36 @@
 }
 
 .form__search-icon {
-  @include button;
-
   position: absolute;
-  right: 6px;
+  right: 21px;
+  z-index: 2;
+}
+
+.form__button {
+  @include button;
+  @include state;
+
+  display: block;
+  position: absolute;
+  right: -14px;
+  width: 57px;
+  height: 57px;
+  margin: 20px;
+  border: none;
   border-radius: 50px;
-  padding: 14px;
+  color: transparent;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    background: url("../img/icon-search.svg") no-repeat;
+  }
 }
