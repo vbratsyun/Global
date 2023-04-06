@@ -56,12 +56,13 @@
   @include state;
 
   display: block;
-  width: max-content;
+  max-width: 126px;
   margin-bottom: 50px;
   padding: 12px 20px;
   font-size: 15px;
   line-height: 22px;
   border-radius: 50px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     text-align: center;

@@ -1,5 +1,6 @@
 .card-profile {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card-profile__item:not(:first-child) {
@@ -19,10 +20,4 @@
 .card-profile__item:nth-child(4) {
   position: relative;
   z-index: -2;
-}
-
-.card-profile__information {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
 }

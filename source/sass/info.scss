@@ -15,6 +15,12 @@
   }
 }
 
+.info__information {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .info__text,
 .info__link-price {
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
