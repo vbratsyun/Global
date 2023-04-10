@@ -1,5 +1,5 @@
-setTimeout((elems)=>{
-  elems = document.querySelectorAll('.carousel-list img');
+setTimeout(()=>{
+  const elems = document.querySelectorAll('.carousel-list img');
 
   elems.forEach((elem, index) => {
     if(elem.classList.contains(`icon-transition${index+1}`)) {
