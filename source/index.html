@@ -1,131 +1,244 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global</title>
+    <link rel="stylesheet" href="pristine/pristine.css" />
+    <script src="pristine/pristine.min.js" defer></script>
+    <script src="js/main.js" type="module"></script>
+    <link href="css/style.min.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global</title>
-  <link rel="stylesheet" href="./pristine/pristine.css">
-  <script src="./pristine/pristine.min.js" defer></script>
-  <script src="./js/main.js" type="module"></script>
-  <link href="css/style.min.css" rel="stylesheet" />
-
-</head>
-
-<body class="page__body">
-  <header class="page-header">
-    <a class="logo" href="#">
-      <img class="logo__image" src="img/icon-logo.svg" width="131" height="40" alt="Site logo.">
-    </a>
-    <nav class="page-nav page-nav--closed page-nav--nojs">
-      <div class="page-nav__wrapper">
-        <ul class="page-nav__site-list site-list">
-          <li>
-            <a class="site-list__link" href="#"> Mobile Top Up</a>
-          </li>
-          <li>
-            <a class="site-list__link" href="#">About</a>
-          </li>
-          <li>
-            <a class="site-list__link" href="#">Rate</a>
-          </li>
-          <li>
-            <a class="site-list__link" href="">Help</a>
-          </li>
-        </ul>
-        <a class="page-nav__login" href="#">Sign Up</a>
-      </div>
-      <button class="page-nav__toggle" type="button">
-        <span class="visually-hidden">Open the menu</span>
-      </button>
-    </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Welcome to site Global</h1>
-
-    <div class="page-main__wrapper">
-      <section class="promo">
-        <h2 class="visually-hidden">Make calling simple</h2>
-        <p class="promo__title">Now Buy Your <span class="br br--tablet"></span> PIN or
-          <span class="promo__title-fragment">Top Up</span> <span class="br br--tablet"></span> With Bank Transfer
-        </p>
-        <p class="promo__description">We Make international calling simple, relible, and cheap basedon your unique calling behavior.</p>
-        <a class="promo__link" href="#">Get Started</a>
-        <form class="form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
-          <label class="visually-hidden" for="search">Search label</label>
-          <div class="form__search">
-            <input class="form__input" id="search" name="search-input" type="text" placeholder="Where do you want to call?" required>
-            <button class="form__button" type="submit">Найти</button>
-          </div>
-
-
-        </form>
-      </section>
-      <section class="info">
-        <h2 class="visually-hidden">Users</h2>
-        <ul class="card-profile">
-          <li class="card-profile__item">
-            <a href="#">
-              <img class="card-profile__avatar" src="img/card-profile-icon1.png" width="38" height="38" alt="Avatar1.">
-            </a>
-          </li>
-          <li class="card-profile__item">
-            <a href="#">
-              <img class="card-profile__avatar" src="img/card-profile-icon2.png" width="38" height="38" alt="Avatar2.">
-            </a>
-          </li>
-          <li class="card-profile__item">
-            <a href="#">
-              <img class="card-profile__avatar" src="img/card-profile-icon3.png" width="38" height="38" alt="Avatar3.">
-            </a>
-          </li>
-          <li class="card-profile__item">
-            <a href="#">
-              <img class="card-profile__avatar" src="img/card-profile-icon-add.svg" width="38" height="38" alt="Add avatar.">
-            </a>
-          </li>
-        </ul>
-        <div class="info__information">
-          <p class="info__text">45k+ Regular User.</p>
-          <a class="info__link-price" href="#">View Price Plan</a>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="logo" href="#">
+        <img
+          class="logo__image"
+          src="img/icon-logo.svg"
+          width="131"
+          height="40"
+          alt="Site logo."
+        />
+      </a>
+      <nav class="page-nav page-nav--closed page-nav--nojs">
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__site-list site-list">
+            <li>
+              <a class="site-list__link" href="#"> Mobile Top Up</a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#">About</a>
+            </li>
+            <li>
+              <a class="site-list__link" href="#">Rate</a>
+            </li>
+            <li>
+              <a class="site-list__link" href="">Help</a>
+            </li>
+          </ul>
+          <a class="page-nav__login" href="#">Sign Up</a>
         </div>
+        <button class="page-nav__toggle" type="button">
+          <span class="visually-hidden">Open the menu</span>
+        </button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Welcome to site Global</h1>
 
+      <div class="page-main__wrapper">
+        <section class="promo">
+          <h2 class="visually-hidden">Make calling simple</h2>
+          <p class="promo__title">
+            Now Buy Your <span class="br br--tablet"></span> PIN or
+            <span class="promo__title-fragment">Top Up</span>
+            <span class="br br--tablet"></span> With Bank Transfer
+          </p>
+          <p class="promo__description">
+            We Make international calling simple, relible, and cheap basedon
+            your unique calling behavior.
+          </p>
+          <a class="promo__link" href="#">Get Started</a>
+          <form
+            class="form"
+            action="http://echo.htmlacademy.ru"
+            method="post"
+            autocomplete="off"
+          >
+            <label class="visually-hidden" for="search">Search label</label>
+            <div class="form__search">
+              <input
+                class="form__input"
+                id="search"
+                name="search-input"
+                type="text"
+                placeholder="Where do you want to call?"
+                required
+              />
+              <button class="form__button" type="submit">Найти</button>
+            </div>
+          </form>
+        </section>
+        <section class="info">
+          <h2 class="visually-hidden">Users</h2>
+          <ul class="card-profile">
+            <li class="card-profile__item">
+              <a href="#">
+                <picture>
+                  <source
+                    type="img/webp"
+                    srcset="
+                      img/card-profile-icon1.webp    1x,
+                      img/card-profile-icon1@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="card-profile__avatar"
+                    src="img/card-profile-icon1.png"
+                    width="38"
+                    height="38"
+                    srcset="img/card-profile-icon1@2x.png 2x"
+                    alt="Avatar1."
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="card-profile__item">
+              <a href="#">
+                <picture>
+                  <source
+                    type="img/webp"
+                    srcset="
+                      img/card-profile-icon2.webp    1x,
+                      img/card-profile-icon2@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="card-profile__avatar"
+                    src="img/card-profile-icon2.png"
+                    width="38"
+                    height="38"
+                    srcset="img/card-profile-icon2@2x.png 2x"
+                    alt="Avatar2."
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="card-profile__item">
+              <a href="#">
+                <picture>
+                  <source
+                    type="img/webp"
+                    srcset="
+                      img/card-profile-icon3.webp    1x,
+                      img/card-profile-icon3@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="card-profile__avatar"
+                    src="img/card-profile-icon3.png"
+                    width="38"
+                    height="38"
+                    srcset="img/card-profile-icon3@2x.png 2x"
+                    alt="Avatar3."
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="card-profile__item">
+              <a href="#">
+                <img
+                  class="card-profile__avatar"
+                  src="img/card-profile-icon-add.svg"
+                  width="38"
+                  height="38"
+                  alt="Add avatar."
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="info__information">
+            <p class="info__text">45k+ Regular User.</p>
+            <a class="info__link-price" href="#">View Price Plan</a>
+          </div>
+        </section>
+      </div>
+
+      <section class="carousel">
+        <h2 class="visually-hidden">Carousel of offers</h2>
+        <ul class="carousel-list">
+          <li>
+            <a href="#">
+              <img
+                class="icon-transition1"
+                src="img/carousel-icon-india30x30.svg"
+                width="30"
+                height="30"
+                alt="Flag of india."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon-transition2"
+                src="img/carousel-icon-great-britain.svg"
+                width="60"
+                height="60"
+                alt="Flag of Great Britain."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon-transition3"
+                src="img/carousel-icon-italy.svg"
+                width="40"
+                height="40"
+                alt="Flag of italy."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon-transition4"
+                src="img/carousel-icon-india50x50.svg"
+                width="50"
+                height="50"
+                alt="Flag of india."
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon-transition5"
+                src="img/carousel-icon-india30x30.svg"
+                width="30"
+                height="30"
+                alt="Flag of india."
+              />
+            </a>
+          </li>
+        </ul>
+        <picture>
+          <source
+            type="img/webp"
+            srcset="img/carousel.webp 1x, img/carousel@2x.webp 2x"
+          />
+          <img
+            class="carousel__image"
+            src="img/carousel.png"
+            width="836"
+            height="557"
+            srcset="img/carousel@2x.png 2x"
+            alt="Photo of a girl."
+          />
+        </picture>
       </section>
-    </div>
-
-
-    <section class="carousel">
-      <h2 class="visually-hidden">Carousel of offers</h2>
-      <ul class="carousel-list">
-        <li>
-          <a href="#">
-            <img class="icon-transition1" src="img/carousel-icon-india30x30.svg" width="30" height="30" alt="Flag of india.">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon-transition2" src="img/carousel-icon-great-britain.svg" width="60" height="60" alt="Flag of Great Britain.">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon-transition3" src="img/carousel-icon-italy.svg" width="40" height="40" alt="Flag of italy.">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon-transition4" src="img/carousel-icon-india50x50.svg" width="50" height="50" alt="Flag of india.">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon-transition5" src="img/carousel-icon-india30x30.svg" width="30" height="30" alt="Flag of india.">
-          </a>
-        </li>
-      </ul>
-      <img class="carousel__image" src="img/carousel.png" width="836" height="557" alt="Photo of a girl.">
-    </section>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
