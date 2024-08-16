@@ -12,6 +12,3 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('page-nav--opened');
   }
 });
-
-
-
