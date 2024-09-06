@@ -1,0 +1,17 @@
+.has-danger {
+  position: relative;
+}
+
+.pristine-error {
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  position: absolute;
+  width: 100%;
+  left: 15px;
+  bottom: -42px;
+  height: 40px;
+  z-index: 1;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #ff8345;
+  padding: 0;
+}
